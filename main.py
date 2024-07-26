@@ -3,7 +3,7 @@ from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivymd.app import MDApp
 import threading
-from torrent_manager import TorrentManager  # Importa o TorrentManager
+from torrentManager import TorrentManager  # Importa o TorrentManager
 
 class MainScreen(Screen):
     pass
