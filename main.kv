@@ -1,0 +1,45 @@
+ScreenManager:
+    MainScreen:
+        id: main_screen
+
+<MainScreen>:
+    name: 'main'
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: dp(10)
+        spacing: dp(10)
+
+        MDTextField:
+            id: torrent_file
+            hint_text: "Enter torrent file"
+            helper_text: "Path to the torrent file"
+            helper_text_mode: "on_focus"
+
+        MDRaisedButton:
+            text: "Start Server"
+            on_press: app.start_server()
+
+        MDRaisedButton:
+            text: "Add Peer"
+            on_press: app.add_peer()
+
+        MDRaisedButton:
+            text: "Show Peers"
+            on_press: app.show_peers()
+
+        MDRaisedButton:
+            text: "Show Progress"
+            on_press: app.show_progress()
+
+        MDRaisedButton:
+            text: "Start Download"
+            on_press: app.start_download()
+
+        MDRaisedButton:
+            text: "Start Upload"
+            on_press: app.start_upload()
+
+        MDLabel:
+            id: log_label
+            text: "Logs will appear here"
+            halign: "center"
